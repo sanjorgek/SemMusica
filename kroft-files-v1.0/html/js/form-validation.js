@@ -27,10 +27,10 @@ $(document).ready(function(){
 		}
 		
 		// web
-		var web = $("input#web").val();
-		if(web == ""){
-			$("#error").fadeIn().text("Web required");
-			$("input#web").focus();
+		var ocup = $("input#ocup").val();
+		if(ocup == ""){
+			$("#error").fadeIn().text("Ocupacion requerida required");
+			$("input#ocup").focus();
 			return false;
 		}
 		
@@ -48,7 +48,7 @@ $(document).ready(function(){
 		// data string
 		var dataString = 'name='+ name
 						+ '&email=' + email        
-						+ '&web=' + web
+						+ '&ocup=' + ocup
 						+ '&comments=' + comments
 						+ '&to=' + to
 						+ '&from=' + from
